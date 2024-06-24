@@ -1,13 +1,13 @@
 // src/components/About.tsx
 import React from 'react';
 
-const About: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>Home Page</h1>
       <p>This is the About page content.</p>
     </div>
   );
 }
 
-export default About;
+export default Home;
