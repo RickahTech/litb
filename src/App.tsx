@@ -5,7 +5,7 @@ import Home from './pages/home';
 function App() {
   return (
     <Router>
-        <Route exact path="/">
+        <Route path="/">
           <Home />
         </Route>
         <Route path="/about">
