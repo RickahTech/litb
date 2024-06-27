@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import type { Schema } from "../amplify/data/resource";
+import type { Schema } from "../../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
-import Home from "./pages/home";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
@@ -36,17 +34,8 @@ function App() {
 
   return (
     <Authenticator>
-      
       {({ signOut }) => (
         <main>
-          <Router>
-            <Route path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <Home />
-            </Route>
-        </Router>
           <h1>My todos</h1>
           <button onClick={createTodo}>+ new</button>
           <ul>
