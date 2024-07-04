@@ -1,9 +1,13 @@
-import React from 'react'
+// src/components/Footer/Footer.jsx
+import React from 'react';
+import './Footer.css'; // If you have specific styles for the footer
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
-  )
-}
+    <footer>
+      <p>© 2024 Loot In The Boot. All rights reserved.</p>
+    </footer>
+  );
+};
+
+export default Footer;
