@@ -1,19 +1,12 @@
-// src/pages/Home.tsx
-import React from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
 
-const Home = () => {
-  return (
-    <div>
-      <Header />
-      <main>
-        <h1>Welcome to Loot In The Boot</h1>
-        <p>Your main page content goes here.</p>
-      </main>
-      <Footer />
-    </div>
-  );
-};
+const Home = () => (
+  <>
+    <Header />
+    <div>Home Page</div>
+    <Footer />
+  </>
+);
 
 export default Home;
