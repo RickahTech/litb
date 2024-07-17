@@ -10,7 +10,7 @@ const client = generateClient<Schema>();
 
 type TodoType = Schema["Todo"]["type"];
 
-function App() {
+function ToDo() {
   const [todos, setTodos] = useState<TodoType[]>([]);
 
   useEffect(() => {
@@ -58,4 +58,4 @@ function App() {
   );
 }
 
-export default App;
+export default ToDo;
